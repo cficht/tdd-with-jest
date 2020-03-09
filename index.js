@@ -1,4 +1,4 @@
-const { isNumber, isString, isBoolean, isArray } = require('./lib/types.js');
+const { isNumber, isString, isBoolean, isArray, isObject } = require('./lib/types.js');
 
 console.log(isNumber('3'));
 console.log(isString('word'));
@@ -8,3 +8,4 @@ console.log(isBoolean(false));
 console.log(isBoolean(1));
 console.log(isArray([]));
 console.log(isArray({}));
+console.log(isObject({}));
