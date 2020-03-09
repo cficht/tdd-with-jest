@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`validator module casters throws if value is not castable to a boolean 1`] = `"Cannot cast >><< to Boolean"`;
+
+exports[`validator module casters throws if value is not castable to a boolean 2`] = `"Cannot cast >>[object Object]<< to Boolean"`;
+
+exports[`validator module casters throws if value is not castable to a boolean 3`] = `"Cannot cast >>() => {}<< to Boolean"`;
+
 exports[`validator module casters throws if value is not castable to a string 1`] = `"Cannot cast >><< to String"`;
 
 exports[`validator module casters throws if value is not castable to a string 2`] = `"Cannot cast >>[object Object]<< to String"`;

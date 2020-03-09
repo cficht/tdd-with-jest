@@ -1,4 +1,4 @@
-const { isNumber, isString, isBoolean, isArray, isObject, isFunction, castToNumber, castToString } = require('./lib/types.js');
+const { isNumber, isString, isBoolean, isArray, isObject, isFunction, castToNumber, castToString, castToBoolean } = require('./lib/types.js');
 
 console.log(isNumber('3'));
 console.log(isString('word'));
@@ -13,3 +13,4 @@ console.log(isFunction(isBoolean));
 
 console.log(castToNumber({}));
 console.log(castToString([]));
+console.log(castToBoolean('false'));
