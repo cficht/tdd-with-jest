@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Schema testing Throws an error for invalid schema object 1`] = `"Cannot cast >>hi<< to Number"`;
+exports[`Schema testing Throws an error for an object missing age 1`] = `"undefined is required"`;
+
+exports[`Schema testing Throws an error for an object missing name 1`] = `"undefined is required"`;
