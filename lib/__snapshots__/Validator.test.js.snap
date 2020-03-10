@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Validator test Throws an error if attempting to put an array for an age 1`] = `"Cannot cast >>2,3<< to Number"`;
-
-exports[`Validator test Throws an error if attempting to put an object for a name 1`] = `"Cannot cast >>[object Object]<< to String"`;
-
-exports[`Validator test Throws an error if no age 1`] = `"age is required"`;
-
-exports[`Validator test Throws an error if no name 1`] = `"name is required"`;
-
 exports[`Validator testing Throws an error if attempting to put an array for an age 1`] = `"Cannot cast >>2,3<< to Number"`;
 
 exports[`Validator testing Throws an error if attempting to put an object for a name 1`] = `"Cannot cast >>[object Object]<< to String"`;

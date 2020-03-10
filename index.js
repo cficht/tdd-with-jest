@@ -1,6 +1,6 @@
 // const { isNumber, isString, isBoolean, isArray, isObject, isFunction, castToNumber, castToString, castToBoolean } = require('./lib/types.js');
 
-const { Validator } = require('./lib/Validator.js');
+const { Schema } = require('./lib/Schema.js');
 
 // console.log(isNumber('3'));
 // console.log(isString('word'));
@@ -20,10 +20,10 @@ const { Validator } = require('./lib/Validator.js');
 
 
 
-const nameValidator = new Validator('name', {
-  type: String,
-  required: true
-});
+// const nameValidator = new Validator('name', {
+//   type: String,
+//   required: true
+// });
 
 // const spot = {
 //   name: 'spot',
@@ -36,4 +36,24 @@ const nameValidator = new Validator('name', {
 //   weight: '20 lbs'
 // };
 
-console.log(nameValidator.validate({ name: [2, 2] }));
+const schema = new Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  age: {
+    type: Number,
+    required: true
+  },
+  weight: {
+    type: String
+  }
+});
+
+const spot = {
+  name: 'spot',
+  age: 5,
+  weight: '20 lbs'
+};
+
+console.log(schema.validate(spot));
